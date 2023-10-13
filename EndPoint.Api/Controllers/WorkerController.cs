@@ -23,7 +23,11 @@ namespace CarwashProject.Controllers
             var userlist = _getWorker.Execute();
             return Ok(userlist);
         }
-
+        /// <summary>
+        /// salam
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult GetWorkerById([FromQuery] int id)
         {
