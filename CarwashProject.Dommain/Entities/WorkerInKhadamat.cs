@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CarwashProject.Domain.Entities;
 
-public class WorkerInService
+public class WorkerInKhadamat
 {
     public int Id { get; set; }
 
@@ -17,6 +17,6 @@ public class WorkerInService
 
     //RelationShipsService
 
-    public int ServiceId { get; set; }
-    public Service Services { get; set; }
+    public int KhadamatId { get; set; }
+    public Khadamat Khadamat { get; set; }
 };

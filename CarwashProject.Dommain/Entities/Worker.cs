@@ -13,10 +13,10 @@ namespace CarwashProject.Domain.Entities
         public string LastName { get; set; }
         public int Age { get; set; }
         public decimal Salary { get; set; }
-        public decimal Bonus { get; set; }   //انعام 
+        public decimal Bonus { get; set; }   //انعام
 
         //RelationShips
 
-        public ICollection<WorkerInService> WorkerInServices { get; set; }
+        public ICollection<WorkerInKhadamat> WorkerInKhadamats { get; set; }
     }
 }

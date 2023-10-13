@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CarwashProject.Domain.Entities
 {
-    public class Service
+    public class Khadamat
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -14,6 +14,6 @@ namespace CarwashProject.Domain.Entities
         public decimal Price { get; set; }
 
         //RelationShips
-        public ICollection<WorkerInService> WorkerInServices { get; set; }
+        public ICollection<WorkerInKhadamat> WorkerInKhadamats { get; set; }
     }
 }

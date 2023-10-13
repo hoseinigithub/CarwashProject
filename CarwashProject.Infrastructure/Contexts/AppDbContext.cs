@@ -16,7 +16,7 @@ public class AppDbContext : DbContext, IAppDbContext
     }
 
     public DbSet<Worker> Workers { get; set; }
-    public DbSet<Service> Services { get; set; }
+    public DbSet<Khadamat> Khadamats { get; set; }
     public DbSet<Manager> Managers { get; set; }
     public DbSet<Car> Cars { get; set; }
 
