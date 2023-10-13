@@ -16,6 +16,10 @@ namespace CarwashProject.Controllers
             _getWorker = getWorker;
             _getWorkerById = getWorkerById;
         }
+        /// <summary>
+        /// hello
+        /// </summary>
+        /// <returns></returns>
 
         [HttpGet]
         public IActionResult GetWorker()
@@ -23,11 +27,7 @@ namespace CarwashProject.Controllers
             var userlist = _getWorker.Execute();
             return Ok(userlist);
         }
-        /// <summary>
-        /// salam ostad
-        /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        
         [HttpGet]
         public IActionResult GetWorkerById([FromQuery] int id)
         {
