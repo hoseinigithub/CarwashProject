@@ -14,7 +14,7 @@ namespace CarwashProject.Controllers
         public WorkerController(IGetWorkerService getWorker, IGetWorkerByIdService getWorkerById)
         {
             _getWorker = getWorker;
-            _getWorkerById = getWorkerById;
+           
         }
         /// <summary>
         /// hello
