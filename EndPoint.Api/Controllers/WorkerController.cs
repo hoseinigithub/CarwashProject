@@ -27,12 +27,17 @@ namespace CarwashProject.Controllers
             var userlist = _getWorker.Execute();
             return Ok(userlist);
         }
-        
+        /// <summary>
+        /// sss
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult GetWorkerById([FromQuery] int id)
         {
             var result = _getWorkerById.Execute(id);
             return Ok(result);
         }
+        
     }
 }
