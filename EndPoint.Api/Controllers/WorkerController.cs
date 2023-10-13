@@ -24,7 +24,7 @@ namespace CarwashProject.Controllers
             return Ok(userlist);
         }
         /// <summary>
-        /// salam
+        /// salam2
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
