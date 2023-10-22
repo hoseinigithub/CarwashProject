@@ -7,7 +7,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CarwashProject.Application.Services.Calculations;
-
+/// <summary>
+/// hello
+/// </summary>
 public class CalculationsService : ICalculations
 {
     private readonly IAppDbContext _context;
