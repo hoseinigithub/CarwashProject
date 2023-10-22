@@ -1,4 +1,4 @@
-﻿namespace CarwashProject.Application.Services.Workers.Queries.GetWorker;
+﻿namespace CarwashProject.Application.Services.Workers.Commands.GetWorker;
 
 public class WorkerDto
 {

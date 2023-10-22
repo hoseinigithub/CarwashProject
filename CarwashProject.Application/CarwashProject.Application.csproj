@@ -16,10 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Services\Workers\Commands\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\CarwashProject.Common\CarwashProject.Common.csproj" />
     <ProjectReference Include="..\CarwashProject.Dommain\CarwashProject.Domain.csproj" />
   </ItemGroup>

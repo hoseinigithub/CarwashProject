@@ -4,15 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CarwashProject.Domain.Entities;
+namespace CarwashProject.Application.Services.Khadamats.Queries.GetKhadamat;
 
-public class Khadamat
+public class KhadamatDto
 {
     public int Id { get; set; }
     public string Name { get; set; }
 
     public decimal Price { get; set; }
-
-    //RelationShips
-    public ICollection<WorkerInKhadamat> WorkerInKhadamats { get; set; }
 }

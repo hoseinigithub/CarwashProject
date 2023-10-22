@@ -3,6 +3,7 @@ using CarwashProject.Infrastructure.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CarwashProject.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231014074058_newKhadamat")]
+    partial class newKhadamat
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -39,98 +42,6 @@ namespace CarwashProject.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Cars");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Manifacturing = 0,
-                            Name = "Pride"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Manifacturing = 0,
-                            Name = "Peugeot"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Manifacturing = 0,
-                            Name = "PeugeotPars"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            Manifacturing = 0,
-                            Name = "Samand"
-                        },
-                        new
-                        {
-                            Id = 5,
-                            Manifacturing = 0,
-                            Name = "Tiba"
-                        },
-                        new
-                        {
-                            Id = 6,
-                            Manifacturing = 0,
-                            Name = "Runu"
-                        },
-                        new
-                        {
-                            Id = 7,
-                            Manifacturing = 0,
-                            Name = "Denu"
-                        },
-                        new
-                        {
-                            Id = 8,
-                            Manifacturing = 0,
-                            Name = "Quick"
-                        },
-                        new
-                        {
-                            Id = 9,
-                            Manifacturing = 0,
-                            Name = "Vanet"
-                        },
-                        new
-                        {
-                            Id = 10,
-                            Manifacturing = 0,
-                            Name = "206"
-                        },
-                        new
-                        {
-                            Id = 11,
-                            Manifacturing = 0,
-                            Name = "207"
-                        },
-                        new
-                        {
-                            Id = 12,
-                            Manifacturing = 0,
-                            Name = "H30Cras"
-                        },
-                        new
-                        {
-                            Id = 13,
-                            Manifacturing = 0,
-                            Name = "Arrizo"
-                        },
-                        new
-                        {
-                            Id = 14,
-                            Manifacturing = 0,
-                            Name = "Santafa"
-                        },
-                        new
-                        {
-                            Id = 15,
-                            Manifacturing = 0,
-                            Name = "MVM"
-                        });
                 });
 
             modelBuilder.Entity("CarwashProject.Domain.Entities.Khadamat", b =>
@@ -156,26 +67,26 @@ namespace CarwashProject.Infrastructure.Migrations
                         new
                         {
                             Id = 1,
-                            Name = "Door",
-                            Price = 80000m
+                            Name = "Roshoei",
+                            Price = 60000m
                         },
                         new
                         {
                             Id = 2,
-                            Name = "Dashboard",
-                            Price = 80000m
+                            Name = "Broom",
+                            Price = 40000m
                         },
                         new
                         {
                             Id = 3,
-                            Name = "Ceiling",
-                            Price = 80000m
+                            Name = "Wax",
+                            Price = 50000m
                         },
                         new
                         {
                             Id = 4,
-                            Name = "Column",
-                            Price = 60000m
+                            Name = "Enginewash",
+                            Price = 80000m
                         });
                 });
 

@@ -11,15 +11,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{0113E05E-D6E7-487C-99E4-6176CCF0539A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarwashProject.Domain", "CarwashProject.Dommain\CarwashProject.Domain.csproj", "{A3D5B349-B0C8-449F-AFF7-CE4F4F58775A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarwashProject.Domain", "CarwashProject.Dommain\CarwashProject.Domain.csproj", "{A3D5B349-B0C8-449F-AFF7-CE4F4F58775A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarwashProject.Application", "CarwashProject.Application\CarwashProject.Application.csproj", "{679DB0FD-3ECF-48AE-ABF8-B8A72411B1E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarwashProject.Application", "CarwashProject.Application\CarwashProject.Application.csproj", "{679DB0FD-3ECF-48AE-ABF8-B8A72411B1E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarwashProject.Infrastructure", "CarwashProject.Infrastructure\CarwashProject.Infrastructure.csproj", "{A9E5A3E1-6B3D-48BF-8366-31DA2F1A6DFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarwashProject.Infrastructure", "CarwashProject.Infrastructure\CarwashProject.Infrastructure.csproj", "{A9E5A3E1-6B3D-48BF-8366-31DA2F1A6DFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarwashProject.Common", "CarwashProject.Common\CarwashProject.Common.csproj", "{F9808DD7-D91B-4570-81AF-7DCEE9D611D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarwashProject.Common", "CarwashProject.Common\CarwashProject.Common.csproj", "{F9808DD7-D91B-4570-81AF-7DCEE9D611D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EndPoint.Api", "EndPoint.Api\EndPoint.Api.csproj", "{BED04A71-7105-4B21-BBE5-7438B6D2CCE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EndPoint.Api", "EndPoint.Api\EndPoint.Api.csproj", "{BED04A71-7105-4B21-BBE5-7438B6D2CCE1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

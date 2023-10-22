@@ -1,7 +1,8 @@
 ﻿using CarwashProject.Application.Interfaces;
 using CarwashProject.Common.Dto.Result;
+using Microsoft.EntityFrameworkCore;
 
-namespace CarwashProject.Application.Services.Workers.Queries.GetWorker;
+namespace CarwashProject.Application.Services.Workers.Commands.GetWorker;
 
 public class GetWorkerService : IGetWorkerService
 {
@@ -12,9 +13,9 @@ public class GetWorkerService : IGetWorkerService
         _context = context;
     }
 
-    public ResultDto<List<WorkerDto>> Execute()
+    public async Task<ResultDto<List<WorkerDto>>> Execute()
     {
-        var worker = _context.Workers.Select(d => new WorkerDto
+        var worker = await _context.Workers.Select(d => new WorkerDto
         {
             Id = d.Id,
             Age = d.Age,
@@ -22,7 +23,7 @@ public class GetWorkerService : IGetWorkerService
             LastName = d.LastName,
             Bonus = d.Bonus,
             Salary = d.Salary
-        }).ToList();
+        }).ToListAsync();
 
         return new ResultDto<List<WorkerDto>>
         {

@@ -3,6 +3,7 @@ using CarwashProject.Infrastructure.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CarwashProject.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231015073041_addcars")]
+    partial class addcars
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -156,26 +159,26 @@ namespace CarwashProject.Infrastructure.Migrations
                         new
                         {
                             Id = 1,
-                            Name = "Door",
-                            Price = 80000m
+                            Name = "Roshoei",
+                            Price = 60000m
                         },
                         new
                         {
                             Id = 2,
-                            Name = "Dashboard",
-                            Price = 80000m
+                            Name = "Broom",
+                            Price = 40000m
                         },
                         new
                         {
                             Id = 3,
-                            Name = "Ceiling",
-                            Price = 80000m
+                            Name = "Wax",
+                            Price = 50000m
                         },
                         new
                         {
                             Id = 4,
-                            Name = "Column",
-                            Price = 60000m
+                            Name = "Enginewash",
+                            Price = 80000m
                         });
                 });
 
